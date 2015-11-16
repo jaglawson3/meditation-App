@@ -22,19 +22,36 @@ $(function(){
 
 
   randomKoan = function(data){
-      var $zenDisplay = $(".zenDisplay");
-      var randomKoan = koans[Math.floor(Math.random()*koans.length)]
-      $zenDisplay.append(randomKoan.title + randomKoan.text + randomKoan.source);
-      $zenDisplay.empty();
-      $zenDisplay.append(randomKoan.title + randomKoan.text + randomKoan.source);
+      var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
+      var $zenDisplayKoanText = $(".zenDisplayKoanText");
+      var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
+      var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
+      var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
+      var randomKoan = koans[Math.floor(Math.random()*koans.length)];
+      $zenDisplayKoanTitle.empty();
+      $zenDisplayKoanText.empty();
+      $zenDisplayKoanSource.empty();
+      $zenDisplayQuoteText.empty();
+      $zenDisplayQuoteAuthor.empty();
+      $zenDisplayKoanTitle.append(randomKoan.title);
+      $zenDisplayKoanText.append(randomKoan.text);
+      $zenDisplayKoanSource.append(randomKoan.source);
   };
 
   randomQuote = function(data){
-      var $zenDisplay = $(".zenDisplay");
-      var randomQuote = quotes[Math.floor(Math.random()*quotes.length)]
-      $zenDisplay.append(randomQuote.text + randomQuote.author);
-      $zenDisplay.empty();
-      $zenDisplay.append(randomQuote.text + randomQuote.author);
+      var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
+      var $zenDisplayKoanText = $(".zenDisplayKoanText");
+      var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
+      var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
+      var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
+      var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+      $zenDisplayKoanTitle.empty();
+      $zenDisplayKoanText.empty();
+      $zenDisplayKoanSource.empty();
+      $zenDisplayQuoteText.empty();
+      $zenDisplayQuoteAuthor.empty();
+      $zenDisplayQuoteText.append(randomQuote.text);
+      $zenDisplayQuoteAuthor.append(randomQuote.author)
   };
 
   nothing = function(){
