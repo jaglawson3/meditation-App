@@ -10,6 +10,7 @@ $(function(){
 
   $("input.set").click(function() {
       var duration = $('.durationControl').val()
+      event.preventDefault();
       alert( "Your duration has been set.");
       localStorage.setItem("duration", duration);
  });
@@ -21,47 +22,68 @@ $(function(){
  // });
 
 
+
+
   randomKoan = function(data){
       var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
       var $zenDisplayKoanText = $(".zenDisplayKoanText");
       var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
       var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
       var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
+      var $zenDisplayNothing = $(".zenDisplayNothing");
+
       var randomKoan = koans[Math.floor(Math.random()*koans.length)];
+
+      $zenDisplayNothing.empty();
       $zenDisplayKoanTitle.empty();
       $zenDisplayKoanText.empty();
       $zenDisplayKoanSource.empty();
       $zenDisplayQuoteText.empty();
       $zenDisplayQuoteAuthor.empty();
+
       $zenDisplayKoanTitle.append(randomKoan.title);
       $zenDisplayKoanText.append(randomKoan.text);
       $zenDisplayKoanSource.append(randomKoan.source);
   };
 
   randomQuote = function(data){
-      var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
-      var $zenDisplayKoanText = $(".zenDisplayKoanText");
-      var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
-      var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
-      var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
-      var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+    var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
+    var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
+    var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
+    var $zenDisplayKoanText = $(".zenDisplayKoanText");
+    var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
+    var $zenDisplayNothing = $(".zenDisplayNothing");
+
+    var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+
+    $zenDisplayNothing.empty();
+    $zenDisplayKoanTitle.empty();
+    $zenDisplayKoanText.empty();
+    $zenDisplayKoanSource.empty();
+    $zenDisplayQuoteText.empty();
+    $zenDisplayQuoteAuthor.empty();
+    $zenDisplayQuoteText.append(randomQuote.text);
+    $zenDisplayQuoteAuthor.append(randomQuote.author);
+  };
+
+  nothing = function(){
+    var $zenDisplayQuoteText = $(".zenDisplayQuoteText");
+    var $zenDisplayQuoteAuthor = $(".zenDisplayQuoteAuthor");
+    var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
+    var $zenDisplayKoanText = $(".zenDisplayKoanText");
+    var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
+    var $zenDisplayNothing = $(".zenDisplayNothing");
+
+      $zenDisplayNothing.empty();
       $zenDisplayKoanTitle.empty();
       $zenDisplayKoanText.empty();
       $zenDisplayKoanSource.empty();
       $zenDisplayQuoteText.empty();
       $zenDisplayQuoteAuthor.empty();
-      $zenDisplayQuoteText.append(randomQuote.text);
-      $zenDisplayQuoteAuthor.append(randomQuote.author)
-  };
-
-  nothing = function(){
-      var $zenDisplay = $(".zenDisplay");
-      $zenDisplay.empty();
   }
 
-  setDisplay = function(selectValue){
-
-  if(selectValue == "koan"){
+setDisplay = function(selectValue){
+    if(selectValue == "koan"){
       randomKoan();
     }
     else if(selectValue == "quote"){
