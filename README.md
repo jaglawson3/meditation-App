@@ -1,1 +1,1 @@
-This is a practice app. The goal is to have a functionaly app that acts as a meditation aid.
+This is a practice app. The goal is to have a functional app that acts as a meditation aid.

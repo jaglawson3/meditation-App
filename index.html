@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Taste of Zen</title>
+    <meta charset="utf-8"/>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" ></script>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"  type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <header>
+      <section class="title">
+          <h1>Zen Flavored</h1>
+      </section>
+    </header>
+    <main>
+      <div class="focus">
+        <div class="container">
+          <div class="zen">
+            <div class="zenDisplay">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bigContainer">
+
+        <section class="text-Section">
+
+          <figure class="text-Section-Display">
+
+          </figure>
+        </section>
+        <section class="inputsSection">
+          <form class="durationInput">
+            <div class="durationInputCaption">How many minutes would you like to meditate?</div>
+            <input type="number" class="durationControl" min="1" max="60" maxlength="2" placeholder="#">
+          </form>
+          <form class="set">
+            <input type="submit" class="set" value="Set Duration">
+          </form>
+
+                  <!-- <form class="focusPointInput">
+            <groupbox>
+              <caption class="focusPointCaption">What would you like to focus on?</caption><br>
+              <radiogroup class="focusPoint">
+                <radio id="quote" label="Random Zen Quote"/>
+                <radio id="koan" label="Random Zen Koan"/>
+                <radio id="nothing" label="Display Nothing" checked/>
+              </radiogroup>
+              </groupbox> -->
+          <!-- <form class="focusPoint">
+            <div class="focusPointCaption">What would you like to focus on?</div>
+            <input type="radio" id="quote" class="focus" name="focusPoint" value="Zen Quote"> Zen Quote
+            <input type="radio" id="koan" class="focus" name="focusPoint" value="Zen Koan"> Zen Koan
+            <input type="radio" id="nothing" class="focus" name="focusPoint" value="Display Nothing" checked> Display Nothing
+          </form> -->
+          <form class="focusPoint">
+            <select>
+              <option value="quote">display Quote</option>
+              <option value="koan">display Koan</option>
+              <option value="nothing">display Nothing</option>
+            </select>
+            <input type="submit" class="submit" value="Start Meditation">
+          </form>
+        </section>
+        </div>
+
+
+
+    </main>
+    <footer>
+      <section class="whenEnds">
+        <p>When you reach the end of your meditation, a singing bowl will play.</p>
+        <div class="whatIsKoan">
+          What is the difference between a Koan an a quote?
+        </div>
+
+      </section>
+      <p>
+        只管打坐
+      </p>
+
+    </footer>
+  </body>
+</html>
