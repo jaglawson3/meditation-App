@@ -41,7 +41,7 @@ $(function(){
           timerDisplay(minutes, seconds);
           console.log(seconds);
       }, 1000)
-    }
+    };
 
     $("input.start").click(function(event){
       event.preventDefault();
