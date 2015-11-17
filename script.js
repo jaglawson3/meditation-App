@@ -21,9 +21,6 @@ $(function(){
  //
  // });
 
-
-
-
   randomKoan = function(data){
       var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
       var $zenDisplayKoanText = $(".zenDisplayKoanText");
