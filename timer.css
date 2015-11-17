@@ -1,0 +1,21 @@
+
+.counterBox{
+display:block;
+width:320px;
+height:320px;
+margin:5% auto;
+border:50px solid #E67E22;
+padding:10px;
+border-radius:50%
+}
+#countdown{
+text-align:center;
+margin-top:50px;
+}
+.numbersTime{
+color:#2ECC71;
+}
+.textTime{
+color:#95A5A6;
+font-size:40px;
+}

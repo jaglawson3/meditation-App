@@ -6,8 +6,10 @@
 
     <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" ></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="timer.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"  type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/timer.css" type="text/css" media="screen">
   </head>
   <body>
     <header>
@@ -72,11 +74,22 @@
               <option value="quote">display Quote</option>
               <option value="koan">display Koan</option>
               <option value="nothing">display Nothing</option>
+              <input type="submit" class="submit" value="set display type">
             </select>
-            <input type="submit" class="submit" value="Start Meditation">
+            <input type="start" class="submit" value="Start Meditation">
           </form>
         </section>
         </div>
+        <section class="timerSection">
+          <div class="counterBox">
+            <div id="countdown">
+              <span class="numbersTime hours"></span><span></span><span class="textTime"> hours</span>
+              <span class="numbersTime minutes"></span><span></span><span class="textTime"> minutes</span>
+              <span class="numbersTime seconds"></span><span></span><span class="textTime"> seconds</span>
+            </div>
+          </div>
+        </section>
+
 
 
 
