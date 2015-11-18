@@ -1,25 +1,52 @@
-function timer() {
-  var buddhistBell = new Audio("buddhistBell.wav");
-  if (TotalSeconds <= 0) {
-    alert("You have completed your meditation")
-    buddhistBell.play();
-}
+$(function() {
 
-TotalSeconds -= 1;
-UpdateTimer()
-window.setTimeout("Tick()", 1000);
-}
+  $("input.set").click(function() {
+    event.preventDefault();
+    var duration = $('.durationControl').val();
+    if (duration == 0) {
+      alert("Duration is set in minutes only.")
+    } else {
+      alert("Your duration has been set.");
+      sessionStorage.setItem("duration", duration);
+    }
+  });
 
-function UpdateTimer() {
-    var Minutes = Math.floor(Seconds / 60);
-    Seconds -= Minutes * (60);
-    var TimeStr = ((Days > 0) ? Days + " days " : "") + LeadingZero(Minutes) + ":" + LeadingZero(Seconds)
-    Timer.innerHTML = TimeStr;
-}
+  function timerDisplay(minutes, seconds) {
+    var timer = document.getElementById("timer");
+    var minutesDisplay = minutes + " minutes";
+    var secondsDisplay = seconds + " seconds";
 
-function LeadingZero(Time) {
-    return (Time < 10) ? "0" + Time : + Time;
-}
+    timer.innerText = minutesDisplay + " : " + secondsDisplay;
+  };
 
-var buddhistBell = new Audio("buddhistBell.wav"); // buffers automatically when created
-buddhistBell.play();
+  function countDown() {
+    var minutes = parseInt(sessionStorage.getItem("duration"));
+    console.log(minutes);
+    var seconds = 0;
+    if (typeof interval != "undefined") {
+      clearInterval(interval);
+    }
+    interval = setInterval(function() {
+      if (seconds == 0 && minutes == 0) {
+        clearInterval(interval);
+        audio = new Audio('buddhistBell.wav');
+        audio.play();
+
+      } else if (minutes > 60) {
+        minutes = 60;
+      } else if (seconds == 0) {
+        minutes--;
+        seconds = 59;
+      } else {
+        seconds--;
+      }
+      timerDisplay(minutes, seconds);
+      console.log(seconds);
+    }, 1000)
+  };
+
+  $("input.start").click(function(event) {
+    event.preventDefault();
+    countDown();
+  });
+});
