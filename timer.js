@@ -16,6 +16,13 @@ $(function(){
     }
   });
 
+
+  $("input.clear").click(function(){
+    event.preventDefault();
+    $('.durationControl').val("");
+    sessionStorage.clear()
+  });
+
   //$("input.set").click(function() {
   //code goes here
   //}
