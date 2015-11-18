@@ -31,7 +31,12 @@ header {
 header h1 {
   text-align: center;
 }
-.inputsSection {
+
+h6{
+  display:none;
+}
+
+.inputsSection{
   text-align: center;
   padding: 1em;
   box-shadow: 0px 10px 15px #363636;
