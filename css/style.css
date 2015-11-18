@@ -30,6 +30,10 @@ h1{
   text-align:center;
 }
 
+h6{
+  display:none;
+}
+
 .inputsSection{
   text-align: center;
   padding:1em;
