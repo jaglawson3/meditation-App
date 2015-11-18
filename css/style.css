@@ -29,6 +29,11 @@ header{
 h1{
   text-align:center;
 }
+
+h6{
+  display:none;
+}
+
 .container{
   position:relative;
   z-index:-1;
