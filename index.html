@@ -4,8 +4,7 @@
 <head>
   <title>A Taste of Zen</title>
   <meta charset="utf-8" />
-
-  <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
   <script src="script.js" type="text/javascript"></script>
   <script src="timer.js" type="text/javascript"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
@@ -48,12 +47,13 @@
         <input type="submit" class="set" value="Set Duration">
       </form>
       <form class="focusPoint">
-        <select>
-          <option value="quote">display Quote</option>
-          <option value="koan">display Koan</option>
-          <option value="nothing">display Nothing</option>
-          <input type="submit" class="submit" value="set display type">
+        <select class="selectBox">
+          <div class="focusInputCaption">What would you like to focus on?</div>
+          <option value="quote">Quote</option>
+          <option value="koan">Koan</option>
+          <option value="nothing">Nothing</option>
         </select>
+        <input type="submit" class="submit" value="set display type">
         <input type="submit" class="start" value="Start Meditation">
       </form>
     </section>
@@ -71,12 +71,8 @@
       <div class="whatIsKoan">
         What is the difference between a Koan an a quote?
       </div>
-
     </section>
-    <p>
-      只管打坐
-    </p>
-
   </footer>
 </body>
+
 </html>
