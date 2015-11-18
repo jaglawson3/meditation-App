@@ -41,23 +41,26 @@
     <section class="inputsSection">
       <form class="durationInput">
         <div class="durationInputCaption">How many minutes would you like to meditate?</div>
-        <input type="number" class="durationControl" min="1" max="60" maxlength="2" placeholder="#">
+        <input type="number" class="durationControl" min="1" max="60" maxlength="2" placeholder="minutes">
       </form>
-      <form class="set">
+      <form class="durationButton">
         <input type="submit" class="set" value="Set Duration">
       </form>
       <form class="focusPoint">
-        <select>
+        <div class="focusInputCaption">What would you like to display?</div>
+        <select class="selectFocus">
           <option value="quote">display Quote</option>
           <option value="koan">display Koan</option>
           <option value="nothing">display Nothing</option>
-          <input type="submit" class="submit" value="set display type">
         </select>
+      </form>
+        <form class="setFocus">
+        <input type="submit" class="submit" value="Set Display">
         <input type="submit" class="start" value="Start Meditation">
       </form>
     </section>
     <section class="timerSection">
-      <div class="countdownBox">
+      <div class="countdownArea">
         <span id="timer"></span>
       </div>
     </section>

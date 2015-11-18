@@ -8,7 +8,7 @@ $(function(){
     }
     else {
           alert( "Your duration has been set.");
-          localStorage.setItem("duration", duration);
+          sessionStorage.setItem("duration", duration);
     }
   });
 
@@ -21,7 +21,7 @@ $(function(){
   };
 
   function countDown(){
-      var minutes = parseInt(localStorage.getItem("duration"));
+      var minutes = parseInt(sessionStorage.getItem("duration"));
       console.log(minutes);
       var seconds = 0;
       // var timer = getElementByClassName("timer");

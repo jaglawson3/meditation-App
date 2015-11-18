@@ -35,8 +35,8 @@ h1{
   padding:1em;
   box-shadow: 0px 10px 15px #363636;
   background-size: 60%;
-  background-color: ##7765E3;
-
+  background-color: #7765E3;
+  box-shadow: 0px 10px 20px #000;
 }
 
 .durationInput{
@@ -47,9 +47,7 @@ h1{
   text-shadow:2px 2px #363636;
 }
 
-.durationControl{
-  color:black;
-}
+
 
 .submit{
   color:black;
@@ -60,6 +58,8 @@ h1{
   color:#fff;
   text-shadow:2px 2px #363636;
 }
+
+
 
 .container{
   position:relative;
@@ -81,17 +81,47 @@ h1{
 .whatIsKoan:hover{
   color:#f0a806;
 }
-
+/*button styling */
 .start{
+  color:#fff;
+  background-color:#000;
   border-radius:50%;
   padding:5px;
+  width:140px;
   box-shadow: 0px 10px 20px #000;
 }
 
 .start:hover{
   text-shadow:0px 2px 2px #ff0000;
-  box-shadow: 0px 10px 10px #ff0000;
 }
+
+.set{
+  color:#fff;
+  background-color:#000;
+  border-radius:50%;
+  padding:5px;
+  width:130px;
+  box-shadow: 0px 10px 20px #000;
+}
+
+.set:hover{
+  text-shadow:0px 2px 2px #ff0000;
+}
+
+.submit{
+  color:#fff;
+  background-color:#000;
+  border-radius:50%;
+  padding:5px;
+  width:130px;
+  box-shadow: 0px 10px 20px #000;
+}
+
+.submit:hover{
+  text-shadow:0px 2px 2px #ff0000;
+}
+
+/*Zen Circle styling */
 
 .zen{
   display:block;
@@ -105,24 +135,13 @@ h1{
   color:#000;
   text-align:center;
   background-image:linear-gradient(to top, red, yellow);
-  opacity:0.97;
+  opacity:0.96;
   box-shadow: 0px 10px 20px #000;
   padding:1em;
+  margin-bottom:2em;
 }
 
-.bigContainer{
-  background-color: #7765E3;
-  opacity:0.9;
-  box-shadow: 0px 10px 20px #000;
-}
-
-.durationInputCaption{
-  padding:1px;
-}
-
-.focusPointCaption{
-  padding:1px;
-}
+/* styling for koans and quote */
 
 .zenDisplay{
   color:black;
@@ -132,6 +151,49 @@ h1{
   padding:6em;
   border-radius:50%;
 }
+
+.bigContainer{
+  background-color: #7765E3;
+  opacity:0.9;
+  box-shadow: 0px 10px 20px #000;
+}
+
+/* question styling */
+
+.durationInputCaption{
+  padding:1em;
+}
+
+.focusPointCaption{
+  padding:1em;
+}
+
+/* number input styling */
+
+.durationControl{
+  color:#000;
+  width:100px;
+  appearance: none;
+  padding: 2px 30px 2px 2px;
+  border: none;
+}
+
+/* styling for select box*/
+
+.selectFocus{
+  color:#000;
+  width:150px;
+  appearance: none;
+  padding: 2px 30px 2px 2px;
+  border: none;
+}
+
+/*.selectFocus select{
+    width:100px;
+    appearance: none;
+    padding: 2px 30px 2px 2px;
+    border: none;
+}*/
 
 
 footer{
