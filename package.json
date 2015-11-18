@@ -1,0 +1,22 @@
+{
+  "name": "mediatation-app",
+  "version": "1.0.0",
+  "description": "This is a practice app. The goal is to have a functional app that acts as a meditation aid.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaglawson3/meditation-App.git"
+  },
+  "author": "Justin Lawson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaglawson3/meditation-App/issues"
+  },
+  "homepage": "https://github.com/jaglawson3/meditation-App#readme",
+  "devDependencies": {
+    "firebase-tools": "^2.1.0"
+  }
+}

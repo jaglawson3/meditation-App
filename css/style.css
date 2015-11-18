@@ -36,6 +36,10 @@ h6{
   display:none;
 }
 
+h6{
+  display:none;
+}
+
 .inputsSection{
   text-align: center;
   padding: 1em;
@@ -122,8 +126,8 @@ h6{
 .zen {
   box-sizing: border box;
   border-radius:50%;
-  width: 100vmin;
-  height: 100vmin;
+  width: 50vmin;
+  height: 50vmin;
   background-image: linear-gradient(to top, red, yellow);
   display:flex;
   flex:wrap;
@@ -214,6 +218,6 @@ footer {
 
 }
 
-/* Styles */
+
 
 /*# sourceMappingURL=style.css.map */
