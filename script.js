@@ -55,6 +55,12 @@ $(function() {
     }
   };
 
+  $("input.clear").click(function() {
+  event.preventDefault();
+  $('.durationControl').val("");
+  sessionStorage.clear()
+  });
+
   $("input.submit").click(function(event) {
     event.preventDefault();
     $focusPoint = $(".focusPoint select")
