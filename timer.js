@@ -1,17 +1,4 @@
 $(function(){
-
-  $("input.set").click(function() {
-    event.preventDefault();
-    var duration = $('.durationControl').val();
-    if(duration == 0){
-          alert("Duration can be set in minutes only.")
-    }
-    else {
-          alert( "Your duration has been set.");
-          sessionStorage.setItem("duration", duration);
-    }
-  });
-
   function timerDisplay(minutes, seconds){
       var timer = document.getElementById("timer");
       var minutesDisplay = minutes + "minutes";
