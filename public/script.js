@@ -1,12 +1,12 @@
 $(function() {
-  $.get('zen-quote_koan-library.json', function(data) {
-    koans = data.koans;
-    quotes = data.quotes;
+  $.get("http://zen.g15.xyz/db.json", function(data) {
+    var koans = data.koans;
+    var quotes = data.quotes;
     console.log(data);
-
-  })
+    });
 
   randomKoan = function(data) {
+
     var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
     var $zenDisplayKoanText = $(".zenDisplayKoanText");
     var $zenDisplayKoanSource = $(".zenDisplayKoanSource");
@@ -24,6 +24,7 @@ $(function() {
   };
 
   randomQuote = function(data) {
+
     var $zenDisplayKoanTitle = $(".zenDisplayKoanTitle");
     var $zenDisplayKoanText = $(".zenDisplayKoanText");
     var $zenDisplayKoanSource = $(".zenDisplayKoanSource");

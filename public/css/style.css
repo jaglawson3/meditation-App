@@ -34,6 +34,10 @@ h6{
   display:none;
 }
 
+audio{
+  display:none;
+}
+
 .inputsSection{
   text-align: center;
   padding:1em;

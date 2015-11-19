@@ -21,6 +21,7 @@ $(function() {
 
   function countDown() {
     var minutes = parseInt(sessionStorage.getItem("duration"));
+    var audio = document.getElementById("buddhistBell");
     console.log(minutes);
     var seconds = 0;
     if (typeof interval != "undefined") {
@@ -29,7 +30,6 @@ $(function() {
     interval = setInterval(function() {
       if (seconds == 0 && minutes == 0) {
         clearInterval(interval);
-        audio = new Audio('buddhistBell.wav');
         audio.play();
 
       } else if (minutes > 60) {

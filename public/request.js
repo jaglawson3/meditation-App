@@ -1,9 +1,37 @@
 $(function() {
-  $.get("http://zen.g15.xyz/db.json", function(data) {
+  $.get('zen-quote_koan-library.json', function(data) {
     var koans = data.koans;
     var quotes = data.quotes;
     console.log(data);
-    });
+  })
+
+var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    if(this.readyState === 4 && this.status == 200){
+      console.log(JSON.parse(this.responseText));
+    };
+  };
+
+xhr.open('GET', '/zen_quote_koan-library.json');
+
+xhr.send();
+
+var xhr2 = new XMLHttpRequest();
+
+  xhr2.onreadystatechange = function() {
+    if(this.readyState === 4 && this.status == 200){
+      var quoteKoan = JSON.parse(this.responseText);
+      var koans = data.koans;
+      var quotes = data.quotes;
+      console.log(quoteKoan.data.koans, quoteKoan.data.quotes)
+      };
+    };
+
+
+  xhr2.open('GET', 'http://zen.g15.xyz/db.json');
+
+  xhr2.send();
 
   randomKoan = function(data) {
 
