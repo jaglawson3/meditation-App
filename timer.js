@@ -29,16 +29,16 @@ $(function() {
     }
     interval = setInterval(function() {
       if (seconds == 0 && minutes == 0) {
-        clearInterval(interval);
-        audio.play();
+          clearInterval(interval);
+          audio.play();
 
       } else if (minutes > 60) {
-        minutes = 60;
-      } else if (seconds == 0) {
-        minutes--;
-        seconds = 59;
+          minutes = 60;
+      }else if (seconds == 0) {
+          minutes--;
+          seconds = 59;
       } else {
-        seconds--;
+          seconds--;
       }
       timerDisplay(minutes, seconds);
       console.log(seconds);

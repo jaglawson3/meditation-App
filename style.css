@@ -1,7 +1,7 @@
 html{
 
   background-color: #7765E3;
-  font-family:Verdana,sans-serif;
+  font-family:Verdana, sans-serif;
   background-image: url('background7.jpg');
   background-position:top;
   background-repeat: no-repeat;
@@ -9,28 +9,26 @@ html{
 }
 
 header{
-  background-size: 200%;
+  font-weight: 200;
+  margin:0px;
+  color:#fff;
+  background-color: #080708;
+  box-shadow: 0px 10px 20px #000;
+  background-size: 40%;
   background-repeat: no-repeat;
   text-align: center;
-  position:top;
+  margin:0;
+  padding:0;
 }
+/*.bigContainer{
+  background-image: url('background2.jpg');
+  background-size:90%;
+  background-repeat:no-repeat;
+  left: 200;
+}*/
 
 h1{
-  box-shadow: 0px 10px 30px #000;
-  text-align: center;
-  letter-spacing:2vw;
-  color:#CDAF95;
-  text-transform:lowercase;
-  background-color:#000;
-  margin:auto 0;
-}
-
-header p{
-  font-size:12px;
-  color:#CDC0B0;
-  background-color:#000;
-  padding: 0;
-  margin:0;
+  text-align:center;
 }
 
 h6{
@@ -41,41 +39,53 @@ audio{
   display:none;
 }
 
-main p{
-  color:#CDBE70;
-  text-shadow:1px 1px #ff0000;
-  text-align: center;
+select{
+  color:black;
+  width:75vw;
+  padding:1vw;
+  color:#fff;
+  text-shadow:2px 2px #363636;
+}
+
+/*.focus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+.focusPoint{
+  padding:1em;
+  color:#fff;
+  text-shadow:2px 2px #363636;
 }
 
 footer{
-  font-size:12px;
   text-align: center;
-  color:#CDAF95;
-  background-color:#363636;
-}
-
-.disclaimer{
-  color:#CDBE70;
-  padding-bottom:.5vw;
-}
-
-.whatIsKoan{
-  cursor:pointer;
   color:#fff;
+  padding:1em;
 }
-
-.whatIsKoan:hover{
-  color:red;
-}
-
-
-/* focus display styling for circle and koans and quotes */
 
 .container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.whenEnd{
+  text-align: center;
+  padding:0;
+}
+
+.whatIsKoan{
+  padding:1em;
+}
+
+.whatIsKoan:hover{
+  color:#f0a806;
+}
+
+
+/* focus display styling for circle and koans and quotes */
 
 .zen{
   box-sizing:border-box;
@@ -89,8 +99,7 @@ footer{
   background-image:linear-gradient(to top, red, yellow);
   opacity:0.9;
   box-shadow: 0px 10px 20px #000;
-  padding:1vw;
-  margin:1vw;
+  padding:1.5vw;
 }
 
 .zenDisplay{
@@ -125,49 +134,35 @@ footer{
 
 /* inpust section styling */
 
-select{
-  width:9vw;
-  padding:1vw;
-  color:#363636;
-  text-shadow:1px 1px #080708;
+.inputsSection{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  align-items:center;
 }
 
-.inputsSection{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.durationInput{
+  padding:1vw;
+  color:#fff;
+  text-shadow:2px 2px #363636;
 }
 
 .focusPoint{
-  padding:1vw;
   color:#fff;
   text-shadow:2px 2px #363636;
 }
 
 .durationControl{
   color:black;
+  height:3vw;
+  width:7vw;
   border-radius:1%;
-  width:6vw;
+  margin:.25vw;
 }
-
-.durationInput{
-  color:#fff;
-  text-shadow:2px 2px #363636;
-  padding-right:3vw;
-}
-
-.focusPoint{
-  color:#fff;
-  text-shadow:2px 2px #363636;
-  padding-left:3vw;
-}
-
-
-
 
 /*button styling */
 .clear, .start, .set, .submit{
-  height:2.5vw;
+  height:3.5vw;
   font-size: 1vw;
   color: #fff;
   background-color: #000;

@@ -1,0 +1,175 @@
+@media (min-width : 350px) and (max-width : 480px) {
+/*@media screen and (min-width: 480px) and (max-width: 960px){*/
+  html{
+    background-repeat:repeat;
+    opacity:0.9;
+  }
+
+  h1{
+    letter-spacing:5vw;
+  }
+
+  /* focus display styling for circle and koans and quotes */
+
+  .zen {
+    width: 100vmin;
+    height: 100vmin;
+    padding:15vw;
+  }
+
+  .zenDisplay{
+    color:#000;
+    text-align:center;
+    color:black;
+    text-shadow:1px 1px #ff0000;
+    font-size:28px;
+    padding:3vw;
+  }
+
+  .zenDisplayKoanTitle{
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 0;
+    font-size:6vw;
+    text-decoration: underline;
+  }
+
+  .zenDisplayKoanText{
+    text-align: center;
+    padding-bottom: 1em;
+    font-size:6vw;
+  }
+
+  .zenDisplayKoanSource{
+    font-size:4vw;
+    padding-top: 1em;
+  }
+
+  .zenDisplayQuoteText{
+    padding-bottom: 1em;
+    font-size:6vw;
+    text-align: center;
+  }
+
+  .zenDisplayQuoteAuthor{
+    text-align: right;
+    font-size:5vw;
+  }
+
+  /* inpust section styling */
+
+  select{
+    width:18vw;
+    padding:1vw;
+    color:#363636;
+    text-shadow:1px 1px #080708;
+  }
+
+  .inputsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .focusPoint{
+    padding:1vw;
+    color:#fff;
+    text-shadow:1px 1px #363636;
+  }
+
+  .durationControl{
+    color:black;
+    border-radius:1%;
+    width:18vw;
+  }
+
+  .durationInput{
+    display:block;
+    text-shadow:1px 1px #363636;
+    margin-left: 6vw;
+  }
+
+  /*button styling */
+  .clear, .start, .set, .submit{
+    height:5vw;
+    font-size: 2vw;
+  }
+
+  .clear{
+    margin-left:19vw;
+    margin-top: 1vw;
+  }
+
+  .start{
+    margin-left:19vw;
+    margin-top: 1vw;
+  }
+
+  .clear:hover, .start:hover, .set:hover, .submit:hover{
+    color:#000;
+    background-color: #fff;
+    text-shadow: 0px 2px 2px #ff0000;
+  }
+
+  /* timer display styling */
+
+  #timer{
+    font-size:6vw;
+  }
+}
+@media (max-width : 780px) {
+  /*button styling */
+  .clear, .start, .set, .submit{
+    height:5vw;
+    font-size: 2vw;
+  }
+
+  .clear{
+    margin-left:14vw;
+    margin-top: 1vw;
+
+  }
+
+  .start{
+    margin-top: 1vw;
+    margin-left:14vw;
+  }
+
+  .clear:hover, .start:hover, .set:hover, .submit:hover{
+    color:#000;
+    background-color: #fff;
+    text-shadow: 0px 2px 2px #ff0000;
+  }
+
+  select{
+    width:13vw;
+    padding:1vw;
+    color:#363636;
+    text-shadow:1px 1px #080708;
+  }
+
+  .inputsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .focusPoint{
+    padding:1vw;
+    color:#fff;
+    text-shadow:1px 1px #363636;
+  }
+
+  .durationControl{
+    color:black;
+    border-radius:1%;
+    width:13vw;
+  }
+
+  .durationInput{
+    text-shadow:1px 1px #363636;
+    margin-left: 6vw;
+  }
+
+
+/*# sourceMappingURL=style.css.map */

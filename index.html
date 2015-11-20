@@ -16,6 +16,7 @@
   <header>
     <section class="title">
       <h1>Zen Flavored</h1>
+      <p>an informal meditation aid for sitting practice</p>
     </section>
   </header>
   <main>
@@ -27,34 +28,35 @@
             </div>
             <div class="zenDisplayQuoteAuthor">
             </div>
-            <div class="zendDisplayKoanTitle">
+            <div class="zenDisplayKoanTitle">
             </div>
             <div class="zenDisplayKoanText">
             </div>
-            <div class="zendDisplayKoanSource">
+            <div class="zenDisplayKoanSource">
             </div>
           </div>
         </div>
       </div>
+      <p>
+        text is scrollable
+      </p>
     </div>
     <section class="inputsSection">
       <h6>User Inputs</h6>
       <form class="durationInput">
-        <div class="durationInputCaption">How many minutes would you like to meditate?</div>
+        <p>How many minutes of practice?</p>
         <input type="number" class="durationControl" min="1" max="60" placeholder="minutes">
-      </form>
-      <form class="set">
         <input type="submit" class="set" value="Set Duration">
         <input type="submit" class="clear" value="Clear Duration">
       </form>
       <form class="focusPoint">
+        <p>What would you like to focus on?</p>
         <select class="selectBox">
-          <div class="focusInputCaption">What would you like to focus on?</div>
-          <option value="quote">Quote</option>
           <option value="koan">Koan</option>
+          <option value="quote">Quote</option>
           <option value="nothing">Nothing</option>
         </select>
-        <input type="submit" class="submit" value="set display type">
+        <input type="submit" class="submit" value="Change Display">
         <input type="submit" class="start" value="Start Meditation">
       </form>
     </section>
@@ -69,10 +71,8 @@
   <footer>
     <section class="whenEnds">
       <h6>Additional Information</h6>
-      <p>When you reach the end of your meditation, a singing bowl will play.</p>
-      <div class="whatIsKoan">
-        What is the difference between a Koan an a quote?
-      </div>
+      <a href="http://buddhism.about.com/od/chanandzenbuddhism/a/Introduction-To-Koans.htm" class="whatIsKoan">follow this link for an explanation of what a Koan is</a>
+      <p class="disclaimer">A Buddhist singing bowl will signal the end. Hold the text in your mind. But, don't stare at it. This is not meant as formal Zen practice, rather informal introduction.</p>
     </section>
   </footer>
 </body>
