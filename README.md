@@ -2,4 +2,4 @@ This is a practice application. It is a single page meditation timer with inform
 
 In the future, I would like to change the focus from just Zen to include possibly other meditation traditions like Theravada and Mahayana Buddhism or perhaps even forms from Hindusim. THis could be implemented perhaps with looped mantra tracks or perhaps guided practice meditations. Also some form of ambient background audio would be a possible feature if I come back to this to fiddle with it.
 
-Please feel free to fork and clone this if you would like to make improvements or additions. I
+Please feel free to fork and clone this if you would like to make improvements or additions. 
