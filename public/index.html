@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>A Taste of Zen</title>
-  <meta charset="utf-8" />
-  <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
-  <script src="script.js" type="text/javascript"></script>
-  <script src="timer.js" type="text/javascript"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="css/alternatestyle.css" type="text/css" media="screen">
-</head>
+  <head>
+    <title>A Taste of Zen</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="timer.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/alternatestyle.css" type="text/css" media="screen">
+  </head>
 
-<body>
-  <header>
-    <section class="title">
-      <h1>Zen Flavored</h1>
-      <p>an informal meditation aid for sitting practice</p>
-    </section>
-  </header>
-  <main>
-    <div class="focus">
-      <div class="container">
-        <div class="zen">
-          <div class="zenDisplay">
-            <div class="zenDisplayQuoteText">
-            </div>
-            <div class="zenDisplayQuoteAuthor">
-            </div>
-            <div class="zenDisplayKoanTitle">
-            </div>
-            <div class="zenDisplayKoanText">
-            </div>
-            <div class="zenDisplayKoanSource">
+  <body>
+    <header>
+      <section class="title">
+        <h1>Zen Flavored</h1>
+        <p>an informal meditation aid for sitting practice</p>
+      </section>
+    </header>
+    <main>
+      <div class="focus">
+        <div class="container">
+          <div class="zen">
+            <div class="zenDisplay">
+              <div class="zenDisplayQuoteText">
+              </div>
+              <div class="zenDisplayQuoteAuthor">
+              </div>
+              <div class="zenDisplayKoanTitle">
+              </div>
+              <div class="zenDisplayKoanText">
+              </div>
+              <div class="zenDisplayKoanSource">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <section class="inputsSection">
-      <h6>User Inputs</h6>
-      <form class="durationInput">
-        <p>How many minutes of practice?</p>
-        <input type="number" class="durationControl" min="1" max="60" placeholder="minutes">
-        <input type="submit" class="set" value="Set Duration">
-        <input type="submit" class="clear" value="Clear Duration">
-      </form>
-      <form class="focusPoint">
-        <p>What would you like to focus on?</p>
-        <select class="selectBox">
-          <option value="koan">Koan</option>
-          <option value="quote">Quote</option>
-          <option value="nothing">Nothing</option>
-        </select>
-        <input type="submit" class="submit" value="Change Display">
-        <input type="submit" class="start" value="Start Meditation">
-      </form>
-    </section>
-    <section class="timerSection">
-      <h6>Timer with Audio</h6>
-      <div class="countdownBox">
-        <span id="timer"></span>
-      </div>
-      <audio id="buddhistBell" src="audio/buddhistBell.wav" type="audio/wav"></audio>
-    </section>
-  </main>
-  <footer>
-    <section class="whenEnds">
-      <h6>Additional Information</h6>
-      <a href="http://buddhism.about.com/od/chanandzenbuddhism/a/Introduction-To-Koans.htm" class="whatIsKoan">follow this link for an explanation of koans</a>
-      <p class="disclaimer">Turn volume on, a Buddhist singing bowl will signal the end of your practice. Text in the circle is scrollable. Hold the text in mind, but don't stare at it. This is not a substitute for formal Zen practice, rather an informal introduction.</p>
-    </section>
-  </footer>
-</body>
+      <section class="inputsSection">
+        <h6>User Inputs</h6>
+        <form class="durationInput">
+          <p>How many minutes of practice?</p>
+          <input type="number" class="durationControl" min="1" max="60" placeholder="minutes">
+          <input type="submit" class="set" value="Set Duration">
+          <input type="submit" class="clear" value="Clear Duration">
+        </form>
+        <form class="focusPoint">
+          <p>What would you like to focus on?</p>
+          <select class="selectBox">
+            <option value="koan">Koan</option>
+            <option value="quote">Quote</option>
+            <option value="nothing">Nothing</option>
+          </select>
+          <input type="submit" class="submit" value="Change Display">
+          <input type="submit" class="start" value="Start Meditation">
+        </form>
+      </section>
+      <section class="timerSection">
+        <h6>Timer with Audio</h6>
+        <div class="countdownBox">
+          <span id="timer"></span>
+        </div>
+        <audio id="buddhistBell" src="audio/buddhistBell.wav" type="audio/wav"></audio>
+      </section>
+    </main>
+    <footer>
+      <section class="whenEnds">
+        <h6>Additional Information</h6>
+        <a href="http://buddhism.about.com/od/chanandzenbuddhism/a/Introduction-To-Koans.htm" class="whatIsKoan">follow this link for an explanation of koans</a>
+        <p class="disclaimer">Turn volume on, a Buddhist singing bowl will signal the end of your practice. Text in the circle is scrollable. Hold the text in mind, but don't stare at it. This is not a substitute for formal Zen practice, rather an informal introduction.</p>
+      </section>
+    </footer>
+  </body>
 
 </html>
