@@ -4,9 +4,9 @@ $(function() {
     event.preventDefault();
     var duration = $('.durationControl').val();
     if (duration == 0) {
-      alert("Duration is set in minutes only.")
+      alert("Duration must be set in minutes.")
     } else {
-      alert("Your duration has been set.");
+      alert("Your duration is set. Press start to begin your meditation time.");
       sessionStorage.setItem("duration", duration);
     }
   });
@@ -14,7 +14,7 @@ $(function() {
   function timerDisplay(minutes, seconds) {
     var timer = document.getElementById("timer");
     var minutesDisplay = minutes + " minutes";
-    var secondsDisplay = seconds + " seconds";
+    var secondsDisplay = seconds + " seconds remaining";
 
     timer.innerText = minutesDisplay + " : " + secondsDisplay;
   };
